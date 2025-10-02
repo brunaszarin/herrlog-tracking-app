@@ -8,7 +8,7 @@ The system allows:
 - 📂 Upload and processing of JSON tracking data  
 - 🗺️ Display of vehicle routes on a map  
 
----
+
 
 ## 📌 Project Requirements  
 According to the provided specification, the project must:  
@@ -16,7 +16,7 @@ According to the provided specification, the project must:
 - **Frontend**: React  
 - **Database**: SQL Server  
 
----
+
 
 ## ⚙️ Tech Stack  
 - **Frontend**: React (with routing, components, and map visualization)  
@@ -24,7 +24,7 @@ According to the provided specification, the project must:
 - **Database**: SQL Server (via pyodbc or SQLAlchemy)  
 - **Map library**: Leaflet / Google Maps API / Mapbox  
 
----
+
 
 ## 📂 Project Structure  
 
@@ -61,7 +61,7 @@ herrlog-tracking-app/
 │   └── requirements.md  # Project requirements (from Herrlog)
 ```
 
----
+
 
 ## 🚀 Getting Started  
 
