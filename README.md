@@ -7,7 +7,7 @@ O sistema permite:
 - 📂 Upload de arquivos JSON com informações de localização.  
 - 🗺️ Exibição das rotas dos veículos em um mapa interativo.  
 
----
+
 
 ## Requisitos do Projeto  
 A aplicação foi construída seguindo as regras fornecidas no desafio:  
@@ -16,7 +16,7 @@ A aplicação foi construída seguindo as regras fornecidas no desafio:
 - **Banco de Dados**: SQL Server.  
 - **Mapa**: integração com bibliotecas de mapas (Leaflet, Mapbox ou Google Maps).  
 
----
+
 
 ## Tecnologias Utilizadas  
 - **React** para a interface web.  
@@ -24,7 +24,7 @@ A aplicação foi construída seguindo as regras fornecidas no desafio:
 - **SQLAlchemy + pyodbc** para integração com o SQL Server.  
 - **Leaflet** para renderização de rotas em mapas.  
 
----
+
 
 ## Estrutura do Projeto  
 
@@ -59,7 +59,7 @@ herrlog-tracking-app/
 │   └── requirements.md
 ```
 
----
+
 
 ## Como Rodar Localmente  
 
@@ -85,7 +85,7 @@ npm start
 - Execute o script `schema.sql` para criar as tabelas.  
 - Opcionalmente, rode o `seed.sql` para inserir dados de teste.  
 
----
+
 
 ## Licença  
 MIT License.  
