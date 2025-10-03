@@ -1,105 +1,91 @@
 # Herrlog Tracking App  
 
-Fullstack application for **vehicle registration and tracking**.  
-This project was developed as part of the Herrlog Solutions Front-End Focus Test.  
+Aplicação fullstack desenvolvida para gerenciar veículos e exibir suas rotas a partir de dados de rastreamento.  
 
-The system allows:  
-- 🚗 Vehicle registration (CRUD operations)  
-- 📂 Upload and processing of JSON tracking data  
-- 🗺️ Display of vehicle routes on a map  
-
-
-
-## 📌 Project Requirements  
-According to the provided specification, the project must:  
-- **Backend**: Python (FastAPI or Flask, RESTful API)  
-- **Frontend**: React  
-- **Database**: SQL Server  
+O sistema permite:  
+- 🚗 Cadastro, edição e exclusão de veículos.  
+- 📂 Upload de arquivos JSON com informações de localização.  
+- 🗺️ Exibição das rotas dos veículos em um mapa interativo.  
 
 
 
-## ⚙️ Tech Stack  
-- **Frontend**: React (with routing, components, and map visualization)  
-- **Backend**: Python (FastAPI recommended for RESTful APIs)  
-- **Database**: SQL Server (via pyodbc or SQLAlchemy)  
-- **Map library**: Leaflet / Google Maps API / Mapbox  
+## Requisitos do Projeto  
+A aplicação foi construída seguindo as regras fornecidas no desafio:  
+- **Backend**: Python (FastAPI, API RESTful).  
+- **Frontend**: React.  
+- **Banco de Dados**: SQL Server.  
+- **Mapa**: integração com bibliotecas de mapas (Leaflet, Mapbox ou Google Maps).  
 
 
 
-## 📂 Project Structure  
+## Tecnologias Utilizadas  
+- **React** para a interface web.  
+- **FastAPI** para a API e lógica de negócio.  
+- **SQLAlchemy + pyodbc** para integração com o SQL Server.  
+- **Leaflet** para renderização de rotas em mapas.  
+
+
+
+## Estrutura do Projeto  
 
 ```
 herrlog-tracking-app/
-│── README.md
-│── .gitignore
-│── backend/             # RESTful API in Python
+│── backend/             # API em Python
 │   ├── src/
-│   │   ├── controllers/ # Business logic (CRUD, JSON upload)
-│   │   ├── models/      # ORM models (Vehicle, Location)
-│   │   ├── routes/      # API endpoints
-│   │   ├── services/    # JSON processing, extra logic
-│   │   └── database/    # SQL Server connection
-│   ├── tests/           # Backend tests (pytest)
-│   ├── requirements.txt # Python dependencies
-│   └── main.py          # FastAPI/Flask entry point
+│   │   ├── controllers/ # Regras de negócio (CRUD, upload JSON)
+│   │   ├── models/      # Modelos do banco (Veículo, Localização)
+│   │   ├── routes/      # Endpoints da API
+│   │   ├── services/    # Processamento e utilitários
+│   │   └── database/    # Conexão com SQL Server
+│   ├── tests/           # Testes automatizados
+│   ├── requirements.txt # Dependências Python
+│   └── main.py          # Ponto de entrada da aplicação
 │
-│── frontend/            # React application
-│   ├── public/
+│── frontend/            # Aplicação React
 │   ├── src/
-│   │   ├── components/  # Reusable UI components
-│   │   ├── pages/       # Pages (Home, Vehicles, Map)
-│   │   ├── services/    # API communication
-│   │   ├── hooks/       # Custom hooks
-│   │   └── styles/      # CSS / styled-components
-│   ├── package.json
+│   │   ├── components/  # Componentes reutilizáveis
+│   │   ├── pages/       # Páginas da aplicação
+│   │   ├── services/    # Comunicação com a API
+│   │   ├── hooks/       # Hooks customizados
+│   │   └── styles/      # Estilos
+│   ├── public/          # Arquivos estáticos
+│   └── package.json
 │
-│── database/            # SQL Server scripts
-│   ├── schema.sql       # Database schema
-│   ├── seed.sql         # Sample data
+│── database/            # Scripts SQL
+│   ├── schema.sql       # Estrutura das tabelas
+│   ├── seed.sql         # Dados de exemplo
 │
-│── docs/                # Extra documentation
-│   └── requirements.md  # Project requirements (from Herrlog)
+│── docs/                # Documentação adicional
+│   └── requirements.md
 ```
 
 
 
-## 🚀 Getting Started  
+## Como Rodar Localmente  
 
-### 1. Clone repository  
-```bash
-git clone https://github.com/<brunaszarin>/herrlog-tracking-app.git
-cd herrlog-tracking-app
-```
-
-### 2. Backend setup (Python with FastAPI example)  
+### Backend (FastAPI)  
 ```bash
 cd backend
 python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
 
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-### 3. Frontend setup (React)  
+### Frontend (React)  
 ```bash
 cd frontend
 npm install
 npm start
 ```
 
-### 4. Database (SQL Server)  
-- Import `database/schema.sql`  
-- Optionally seed with `database/seed.sql`  
+### Banco de Dados (SQL Server)  
+- Execute o script `schema.sql` para criar as tabelas.  
+- Opcionalmente, rode o `seed.sql` para inserir dados de teste.  
 
----
 
-## ✅ Delivery Instructions  
-- The application must be uploaded to a **public GitHub repository**.  
-- Notify Herrlog team by email at: **suporte@herrlog.com**.  
 
----
-
-## 📝 License  
-This project is licensed under the **MIT License**.  
+## Licença  
+MIT License.  
