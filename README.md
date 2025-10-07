@@ -1,6 +1,5 @@
-# Herrlog Tracking App  
-
-Aplicação fullstack desenvolvida para gerenciar veículos e exibir suas rotas a partir de dados de rastreamento.  
+# Herrlog Tracking App 🚛   
+Aplicação de rastreamento e visualização de rotas em tempo real
 
 O sistema permite:  
 - 🚗 Cadastro, edição e exclusão de veículos.  
@@ -30,34 +29,43 @@ A aplicação foi construída seguindo as regras fornecidas no desafio:
 
 ```
 herrlog-tracking-app/
-│── backend/             # API em Python
+│── backend/                       # API em Python (FastAPI)
 │   ├── src/
-│   │   ├── controllers/ # Regras de negócio (CRUD, upload JSON)
-│   │   ├── models/      # Modelos do banco (Veículo, Localização)
-│   │   ├── routes/      # Endpoints da API
-│   │   ├── services/    # Processamento e utilitários
-│   │   └── database/    # Conexão com SQL Server
-│   ├── tests/           # Testes automatizados
-│   ├── requirements.txt # Dependências Python
-│   └── main.py          # Ponto de entrada da aplicação
+│   │   ├── controllers/           # Regras de negócio (CRUD, upload JSON)
+│   │   ├── models/                # Modelos do banco (Veículo, Localização)
+│   │   ├── routes/                # Endpoints da API
+│   │   ├── services/              # Processamento e utilitários
+│   │   └── database/              # Conexão com SQL Server
+│   ├── requirements.txt
+│   └── main.py
 │
-│── frontend/            # Aplicação React
+│── frontend/                      # Aplicação React unificada
 │   ├── src/
-│   │   ├── components/  # Componentes reutilizáveis
-│   │   ├── pages/       # Páginas da aplicação
-│   │   ├── services/    # Comunicação com a API
-│   │   ├── hooks/       # Hooks customizados
-│   │   └── styles/      # Estilos
-│   ├── public/          # Arquivos estáticos
-│   └── package.json
+│   │   ├── app/                   # Rotas e layout principal
+│   │   ├── components/            # Componentes do tracking + interface
+│   │   ├── hooks/                 # Hooks customizados
+│   │   ├── lib/                   # Funções auxiliares (utils, context)
+│   │   ├── pages/                 # Páginas herdadas do tracking app
+│   │   ├── services/              # Comunicação com API FastAPI
+│   │   ├── styles/                # Estilos globais e importados da Interface
+│   │   └── assets/                # Imagens, ícones e fontes
+│   ├── public/
+│   │   ├── images/
+│   │   ├── icons/
+│   │   └── assets/
+│   ├── package.json
+│   ├── vite.config.ts.from_interface
+│   └── README.md.from_interface
 │
-│── database/            # Scripts SQL
-│   ├── schema.sql       # Estrutura das tabelas
-│   ├── seed.sql         # Dados de exemplo
+│── database/
+│   ├── schema.sql
+│   ├── seed.sql
 │
-│── docs/                # Documentação adicional
-│   └── requirements.md
-```
+│── external/
+│   └── herrlog_app_interface_full/ 
+│
+│── README.txt                
+
 
 
 
@@ -85,7 +93,8 @@ npm start
 - Execute o script `schema.sql` para criar as tabelas.  
 - Opcionalmente, rode o `seed.sql` para inserir dados de teste.  
 
+## ⚠️ Nota pessoal:
+Este projeto foi desenvolvido dentro de um prazo bastante limitado, com foco em garantir o funcionamento completo das principais funcionalidades e a entrega de uma base sólida. Embora ainda existam oportunidades de aprimoramento e refatoração, o resultado representa o melhor possível dentro das condições e do tempo disponíveis, priorizando qualidade, clareza e usabilidade.
 
-
-## Licença  
-MIT License.  
+## 📄 Licença
+MIT License © Herrlog — Todos os direitos reservados.  
