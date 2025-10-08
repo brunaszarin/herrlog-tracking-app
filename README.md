@@ -47,8 +47,8 @@ herrlog-tracking-app/
 │── external/
 │   └── herrlog_app_interface_full/ 
 │
-│── README.txt                
-
+│── README.txt         
+```
 
 ## ⚠️ Nota pessoal:
 Este projeto foi desenvolvido dentro de um prazo bastante limitado, com foco em garantir o funcionamento completo das principais funcionalidades e a entrega de uma base sólida. Embora ainda existam oportunidades de aprimoramento e refatoração, o resultado representa o melhor possível dentro das condições e do tempo disponíveis, priorizando qualidade, clareza e usabilidade.
