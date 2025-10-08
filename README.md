@@ -1,5 +1,8 @@
 # Herrlog Tracking App 🚛   
 Aplicação de rastreamento e visualização de rotas em tempo real
+<p align="center">
+  <img src="herrlog-test.gif" alt="Demonstração do App Logístico" />
+</p>
 
 O sistema permite:  
 - 🚗 Cadastro, edição e exclusão de veículos.  
