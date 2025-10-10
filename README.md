@@ -28,10 +28,7 @@ Ela combina **Express + Vite + React + Tailwind + TypeScript + Drizzle ORM** em 
 
 ## 🚀 Visão Geral
 
-O **HerrlogTracker** é uma aplicação para **gerenciar e visualizar dados de veículos, rotas e telemetria GPS**, ideal para uso em frotas e operações logísticas.  
-Ele oferece uma interface moderna, backend em Express, e integração opcional com banco de dados PostgreSQL via **Drizzle ORM**.
-
-No modo de desenvolvimento, o sistema já inclui uma base de dados mockada em memória (`MemStorage`) com veículos e rotas de exemplo.
+O **HerrlogTracker** é uma aplicação para **gerenciar e visualizar dados de veículos, rotas e telemetria GPS**, ideal para uso em frotas e operações logísticas. Ele oferece uma interface moderna, backend em Express, e integração opcional com banco de dados PostgreSQL via **Drizzle ORM**. No modo de desenvolvimento, o sistema já inclui uma base de dados mockada em memória (`MemStorage`) com veículos e rotas de exemplo.
 
 ---
 
