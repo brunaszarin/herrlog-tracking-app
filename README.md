@@ -9,6 +9,14 @@ Ela combina **Express + Vite + React + Tailwind + TypeScript + Drizzle ORM** em 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
+
+
+
+![Preview da Interface Herrlog](https://github.com/brunaszarin/herrlog-tracking-app/raw/main/previewinterface.gif)
+
+
+
+
 ---
 
 ## 🧭 Índice
